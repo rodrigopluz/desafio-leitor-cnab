@@ -12,13 +12,13 @@ const optionsYargs = yargs(process.argv.slice(2))
 		alias: "from",
 		describe: "posição inicial de pesquisa da linha do Cnab",
 		type: "number",
-		demandOption: false,
+		demandOption: true,
 	})
 	.option("t", {
 		alias: "to",
 		describe: "posição final de pesquisa da linha do Cnab",
 		type: "number",
-		demandOption: false,
+		demandOption: true,
 	})
 	.option("n", {
 		alias: "name",
@@ -33,7 +33,7 @@ const optionsYargs = yargs(process.argv.slice(2))
 		demandOption: true,
 	})
 	.example(
-		"$0 -f 21 -t 33 -n NOME_EMPRESA -s p",
+		"$0 -f 34 -t 73 -n NOME_EMPRESA -s p",
 		"lista a linha e campo que from e to do cnab"
 	).argv;
 

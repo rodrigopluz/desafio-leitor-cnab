@@ -33,7 +33,7 @@ Opções:
   -s, --segmento  tipo de segmento                        [string] [obrigatório]
 
 Exemplos:
-  cnabRows.js -f 21 -t 34 -n NOME_EMPRESA -s p  lista a linha e campo que from e to do cnab
+  cnabRows.js -f 34 -t 73 -n NOME_EMPRESA -s p  lista a linha e campo que from e to do cnab
 ```
 
 hoje a ferramenta busca uma posição e loga isso no terminal.
@@ -45,3 +45,29 @@ desafio consiste:
 - **Bonus**, ler o cnab e escrever um novo arquivo em formato JSON, contendo nome e endereço da empresa.
 
 O candidato tem total liberdade de mudar a estrutura atual desse projeto, a ideía é ver a criatividade de resolver esse problema.
+
+Segue o print do CLI com o resultado feito conforme o comando
+
+- Segmento P
+
+```bash
+$ node cnabRows.js -f 34 -t 73 -n NOME_EMPRESA -s p
+```
+
+![image](command-p.png)
+
+- Segmento Q
+
+```bash
+$ node cnabRows.js -f 34 -t 73 -n NOME_EMPRESA -s q
+```
+
+![image](command-q.png)
+
+- Segmento R
+
+```bash
+$ node cnabRows.js -f 34 -t 73 -n NOME_EMPRESA -s r
+```
+
+![image](command-r.png)
